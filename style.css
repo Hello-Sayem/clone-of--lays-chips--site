@@ -1,0 +1,419 @@
+/* "Poppins" */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* "Manrope" */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* "Inter" */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Gloval work's start*/
+/* variables */
+:root {
+  --poppins: "Poppins", sans-serif;
+  --Manrope: "Manrope", sans-serif;
+  --Inter: "Inter", sans-serif;
+  --black: #182327;
+  --youlo: #ffd36a;
+  --sky: #80e2ff;
+  --font_color_p: #5d696d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  color: var(--font_color_p);
+}
+/* for buttons  */
+button {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: center;
+  font-family: var(--Manrope);
+  background-color: var(--black);
+  color: white;
+  padding: 1.2rem 2.4rem;
+  border-radius: 0.8rem;
+  display: inline-block;
+  border: none;
+}
+.secendary_btn {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  font-family: var(--Manrope);
+  background-color: white;
+  color: #182327;
+  padding: 1.2rem 2.4rem;
+  border-radius: 0.8rem;
+  display: inline-block;
+  border: none;
+  margin: left 2.8rem;
+}
+/* button effact animation stert */
+.button-27 {
+  appearance: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+}
+
+.button-27:disabled {
+  pointer-events: none;
+}
+
+.button-27:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button-27:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+/* button effact animation end */
+
+/* Gloval work's end*/
+
+/* nav bar start */
+header {
+  padding: 4.2rem;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.2rem;
+}
+.manu_bar {
+  font-family: var(--Manrope);
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  display: flex;
+  gap: 4.2rem;
+}
+.screce_box {
+  display: flex;
+  max-width: 30.3rem;
+  width: 30.3rem;
+  border: 1px solid #d8e0e2;
+  border-radius: 0.8rem;
+  padding: 1.4rem;
+}
+.screce_box input {
+  width: 100%;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+.screce_box input::placeholder {
+  font-family: var(--Manrope);
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  padding-left: 1rem;
+}
+.man {
+  background-color: var(--black);
+  padding: 1.5rem;
+  border-radius: 50%;
+}
+/* nav bar end  */
+
+/* main hero section stert */
+.hero {
+  background: linear-gradient(180deg, #02b5ea 0%, rgba(2, 181, 234, 0.15) 100%);
+  /* display: inline-block; */
+
+  height: 770px;
+}
+.hero_section {
+  display: flex;
+}
+.hero_left {
+  padding: 10.5rem 0.8rem 9.7rem 12.7rem;
+}
+.hero_left h1 {
+  font-family: var(--poppins);
+  color: var(--black);
+  font-size: 7rem;
+  font-weight: 700;
+  line-height: 76px;
+}
+
+.hero_left p {
+  font-family: var(--Manrope);
+  color: var(--black);
+  font-size: 2rem;
+  font-weight: 400;
+  padding: 3.1rem 0rem 6.1rem 0rem;
+}
+.bg-bubbol {
+  background-image: url(asets/hero/hero_right_bg.png);
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+}
+.cheaps_bg {
+  padding-top: 4rem;
+  padding-right: 8.5rem;
+  padding-left: 10rem;
+  position: relative;
+  z-index: 3;
+}
+.hero_right {
+  padding-right: 8.5rem;
+  padding-left: 20.5rem;
+}
+/* main hero section end */
+
+/* Secend main hero section stert  */
+.secend_hero {
+  margin: 10.5rem 0rem 10.5rem 0rem;
+  display: flex;
+}
+
+.sec_hero_left h2 {
+  font-family: var(--poppins);
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 7rem;
+}
+.sec_hero_right {
+  margin: 30rem 0rem 0rem 10.5rem;
+}
+.sec_hero_right h3 {
+  font-family: var(--poppins);
+  color: var(--black);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 26px;
+}
+.sec_hero_right p:nth-child(5) {
+  font-family: var(--Manrope);
+  color: #5d696d;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.sec_hero_right p:nth-child(3) {
+  font-family: var(--Manrope);
+  color: #5d696d;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+/* Secend main hero section end  */
+
+/* tharde section stert  */
+.ceeps-blog {
+  text-align: center;
+}
+.ceeps-blog h2 {
+  font-family: var(--poppins);
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 46px;
+  text-align: center;
+}
+.ceeps-blog p {
+  font-family: var(--Manrope);
+  color: var(--font_color_p);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  margin: 1.8rem 0rem 7rem 0rem;
+}
+.ceeps-blog button {
+  margin: 5.5rem 0rem 10.5rem;
+}
+.all_cheeps {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+.top_layer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.bottom_layer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.ceeps {
+  background-image: url(asets/all_ceeps/ceeps_bg/l-green.png);
+  height: 350px;
+  width: 290px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.ceeps_text {
+  text-align: left;
+}
+.ceeps_text h3 {
+  font-family: var(--Manrope);
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 32px;
+  text-align: left;
+}
+.ceeps_text h4 {
+  font-family: var(--Manrope);
+  font-size: 16px;
+  color: var(--font_color_p);
+  font-weight: 600;
+  line-height: 28px;
+  text-align: left;
+}
+/* tharde section end  */
+
+/* fourth section stert  */
+.blog {
+  background-color: #80e2ff;
+  width: auto;
+  height: 752px;
+  display: flex;
+}
+.full_blog {
+  display: flex;
+  gap: 13rem;
+}
+.blog_left {
+  margin-top: 19.9rem;
+}
+.blog_left h2 {
+  font-family: var(--poppins);
+
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 46px;
+}
+.blog_left p {
+  font-family: var(--Inter);
+  color: var(--font_color_p);
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 36px;
+  text-align: left;
+
+  margin: 7rem 0rem 7.7rem 0rem;
+}
+.blog_left h3 {
+  font-family: var(--Manrope);
+  color: var(--font_color_p);
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 32px;
+  text-align: left;
+  margin-bottom: 0.6rem;
+}
+.blog_left h4 {
+  font-family: var(--Manrope);
+  color: var(--font_color_p);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+}
+.blog_right {
+  margin-top: 10rem;
+}
+.sec_blog {
+  background-color: #c2da4d80;
+  width: auto;
+  height: 468px;
+}
+.sec_blog {
+  background-image: url(asets/bloog/sec-blog_bg.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+
+  text-align: center;
+}
+.blog_contant {
+  padding-top: 13rem;
+}
+.sec_blog img {
+  background-size: cover;
+}
+.sec_blog h2 {
+  font-family: var(--poppins);
+  font-size: 42px;
+  font-weight: 700;
+}
+.sec_blog p {
+  font-family: var(--Manrope);
+  font-size: 18px;
+  font-weight: 400;
+  margin: 3rem 0rem 3.8rem;
+}
+/* fourth section end */
+footer {
+  background-color: #fff7e3;
+  height: 68.8rem;
+  width: auto;
+}
+.footer_blog {
+  display: flex;
+}
+.footer_left {
+  margin-top: 21.8rem;
+  margin-right: 8.7rem;
+}
+.footer_bar {
+  margin: 2.4rem 0rem 2.4rem 0rem;
+}
+.footer_left h4 {
+  font-family: var(--Manrope);
+  font-size: 2rem;
+  font-weight: 700;
+}
+.contact_icon {
+  margin: 1.6rem 0rem 2.4rem 0rem;
+  display: flex;
+  gap: 2rem;
+}
+.footer_left p {
+  font-family: var(--Manrope);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.footer_right {
+  background-image: url(asets/footer/bg.png);
+  background-repeat: no-repeat;
+  background-size: center;
+  margin-top: 13rem;
+  margin-left: 8.7rem;
+}
+/* footre end  */
